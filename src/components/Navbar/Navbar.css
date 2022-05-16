@@ -1,0 +1,38 @@
+.n-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.n-left {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+  /* justify-content: left; */
+  margin-top: 20px;
+}
+.n-left > :nth-child(1) {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.n-right {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+  /* justify-content: left; */
+}
+.n-right > ul {
+  display: flex;
+  flex: 1;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.n-right > ul > *:hover {
+  background: white;
+  cursor: pointer;
+  color: var(--orange);
+}
+@media screen and (max-width: 480px) {
+  .n-right {
+    display: none;
+  }
+}
